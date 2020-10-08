@@ -1,10 +1,6 @@
 import express from 'express';
 
-const root = (
-  req: express.Request,
-  res: express.Response,
-  next: express.NextFunction
-) => {
+const root = (req: express.Request, res: express.Response): void => {
   res.write('Hello World!');
   res.end();
 };

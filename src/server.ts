@@ -3,10 +3,6 @@ import expressWinston from 'express-winston';
 import router from './router';
 import winstonConfig from './config/winstonConfig';
 
-interface ResponseError extends Error {
-  status?: number;
-}
-
 const app = express();
 const PORT = 8000;
 
