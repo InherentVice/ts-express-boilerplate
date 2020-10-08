@@ -1,4 +1,4 @@
-import root from './root';
+import hello from './hello';
 import error from './error';
 
-export default { root, error };
+export default { hello, error };
