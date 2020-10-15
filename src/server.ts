@@ -4,15 +4,15 @@ import router from './router';
 import winstonConfig from './config/winstonConfig';
 
 const app = express();
-const PORT = 8000;
+const { PORT } = process.env;
 
-// for logging of Requests
+// logging of Requests
 app.use(expressWinston.logger(winstonConfig.request));
 
 // import router.
 app.use(router);
 
-// for logging of errors
+// logging of errors
 app.use(expressWinston.errorLogger(winstonConfig.error));
 
 // start server
